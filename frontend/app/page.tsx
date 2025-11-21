@@ -112,15 +112,11 @@ export default function Home() {
                 <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                   BgRemove Pro
                 </h1>
-                <p className="text-xs text-gray-500">AI-Powered Background Removal</p>
+                <p className="text-xs text-gray-500">Background Removal Tool</p>
               </div>
             </div>
 
             <div className="flex items-center gap-4">
-              <div className="hidden md:flex items-center gap-2 px-3 py-1 bg-blue-50 rounded-full">
-                <Sparkles className="w-4 h-4 text-blue-600" />
-                <span className="text-sm font-medium text-blue-700">5 AI Models</span>
-              </div>
               <div className="hidden md:flex items-center gap-2 px-3 py-1 bg-purple-50 rounded-full">
                 <Zap className="w-4 h-4 text-purple-600" />
                 <span className="text-sm font-medium text-purple-700">Batch Processing</span>
@@ -136,24 +132,24 @@ export default function Home() {
         {uploadedImages.length === 0 && processedImages.length === 0 && (
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Remove Backgrounds with AI
+              Remove Backgrounds Instantly
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
-              Upload your images and let our AI models remove backgrounds instantly.
-              Compare different models or batch process multiple images.
+              Upload your images and remove backgrounds in seconds.
+              Process single images or batches at once.
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-600">
               <div className="flex items-center gap-2">
-                <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                <span>Rembg (Fast & Accurate)</span>
-              </div>
-              <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                <span>BiRefNet (State-of-the-art)</span>
+                <span>Fast Processing</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
                 <span>Custom Backgrounds</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                <span>Batch Support</span>
               </div>
             </div>
           </div>
@@ -190,7 +186,7 @@ export default function Home() {
                 disabled={uploadedImages.length === 0 || isProcessing}
                 className="w-full px-6 py-3 bg-white border-2 border-gray-200 text-gray-700 rounded-lg font-semibold hover:border-blue-300 hover:bg-blue-50 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
               >
-                {isProcessing ? "Comparing..." : "Compare Models"}
+                {isProcessing ? "Comparing..." : "Compare Methods"}
               </button>
             </div>
 
@@ -237,8 +233,8 @@ export default function Home() {
       {/* Footer */}
       <footer className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 mt-20 border-t border-gray-200">
         <div className="text-center text-gray-600 text-sm">
-          <p>Powered by Rembg, BiRefNet & BackgroundRemover</p>
-          <p className="mt-2">Open source AI models for background removal</p>
+          <p>Professional background removal tool</p>
+          <p className="mt-2">Fast, accurate, and easy to use</p>
         </div>
       </footer>
     </div>

@@ -62,7 +62,7 @@ export default function ResultsDisplay({
         <div className="p-4 border-b border-gray-200 flex items-center justify-between">
           <div>
             <h3 className="font-semibold text-gray-900">
-              {compareMode ? "Model Comparison" : "Results"}
+              {compareMode ? "Method Comparison" : "Results"}
             </h3>
             <p className="text-sm text-gray-500">
               {processed.length} image{processed.length > 1 ? 's' : ''} processed
@@ -176,7 +176,7 @@ export default function ResultsDisplay({
                   </div>
                   <div className="text-center">
                     <p className="font-medium text-gray-900">
-                      {idx === 0 ? "Rembg" : "Rembg Fast"}
+                      {idx === 0 ? "Standard" : "Fast"}
                     </p>
                     <button
                       onClick={() => downloadSingle(url, idx)}

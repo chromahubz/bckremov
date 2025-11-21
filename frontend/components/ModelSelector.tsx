@@ -11,28 +11,28 @@ interface ModelSelectorProps {
 const models = [
   {
     id: "rembg",
-    name: "Rembg",
-    description: "U-2-Net model - Best balance",
+    name: "Standard",
+    description: "Best balance of speed and quality",
     icon: Sparkles,
-    color: "from-green-500 to-emerald-600",
-    bgColor: "bg-green-50",
-    textColor: "text-green-700",
-    features: ["High accuracy", "Fast processing", "General purpose"]
+    color: "from-blue-500 to-cyan-600",
+    bgColor: "bg-blue-50",
+    textColor: "text-blue-700",
+    features: ["Recommended", "Fast", "Accurate"]
   },
   {
     id: "birefnet",
-    name: "BiRefNet",
-    description: "State-of-the-art 2024 model",
+    name: "High Quality",
+    description: "Best quality results",
     icon: Stars,
     color: "from-orange-500 to-red-600",
     bgColor: "bg-orange-50",
     textColor: "text-orange-700",
-    features: ["Best quality", "Latest AI", "2024 model"]
+    features: ["Best quality", "Detailed", "Premium"]
   },
   {
     id: "backgroundremover",
-    name: "BackgroundRemover",
-    description: "Video support & high quality",
+    name: "Advanced",
+    description: "Video support and high quality",
     icon: Video,
     color: "from-indigo-500 to-purple-600",
     bgColor: "bg-indigo-50",
@@ -41,30 +41,30 @@ const models = [
   },
   {
     id: "rembg-fast",
-    name: "Rembg Fast",
-    description: "U-2-Net-P - Faster & smaller",
+    name: "Fast",
+    description: "Faster processing",
     icon: Zap,
-    color: "from-blue-500 to-cyan-600",
-    bgColor: "bg-blue-50",
-    textColor: "text-blue-700",
-    features: ["Fastest", "Smaller model", "Good quality"]
+    color: "from-green-500 to-emerald-600",
+    bgColor: "bg-green-50",
+    textColor: "text-green-700",
+    features: ["Quickest", "Good quality"]
   },
   {
     id: "rembg-anime",
-    name: "Rembg Anime",
-    description: "Specialized for anime art",
+    name: "Anime/Art",
+    description: "Optimized for anime and illustrations",
     icon: Cpu,
     color: "from-purple-500 to-pink-600",
     bgColor: "bg-purple-50",
     textColor: "text-purple-700",
-    features: ["Anime optimized", "Art friendly", "Illustrations"]
+    features: ["Anime", "Art", "Illustrations"]
   }
 ];
 
 export default function ModelSelector({ selected, onSelect, disabled }: ModelSelectorProps) {
   return (
     <div className="bg-white rounded-xl p-6 border border-gray-200">
-      <h3 className="font-semibold text-gray-900 mb-4">Select AI Model</h3>
+      <h3 className="font-semibold text-gray-900 mb-4">Processing Mode</h3>
 
       <div className="space-y-3">
         {models.map((model) => {
@@ -121,7 +121,7 @@ export default function ModelSelector({ selected, onSelect, disabled }: ModelSel
 
       <div className="mt-4 p-3 bg-gray-50 rounded-lg">
         <p className="text-xs text-gray-600">
-          💡 <strong>Tip:</strong> Use "Compare Models" to see results side-by-side
+          💡 <strong>Tip:</strong> Use "Compare Methods" to see results side-by-side
         </p>
       </div>
     </div>

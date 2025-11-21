@@ -178,7 +178,7 @@ export default function BackgroundSelector({
 
       <div className="mt-4 p-3 bg-amber-50 rounded-lg">
         <p className="text-xs text-amber-800">
-          ⚠️ Custom backgrounds are not available in "Compare Models" mode
+          ⚠️ Custom backgrounds are not available in "Compare Methods" mode
         </p>
       </div>
     </div>
