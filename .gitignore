@@ -1,0 +1,61 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+backend/__pycache__/
+backend/*.pyc
+
+# Environment variables
+.env
+.env.local
+.env.production
+
+# Build outputs
+frontend/.next/
+frontend/out/
+frontend/build/
+
+# Python
+*.pyc
+__pycache__/
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.Python
+venv/
+env/
+ENV/
+
+# Models (will be downloaded automatically)
+backend/.u2net/
+backend/models/
+*.pth
+*.onnx
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
